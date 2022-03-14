@@ -8,5 +8,8 @@
   "license": "MIT",
   "engines": {
     "node": "17"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }

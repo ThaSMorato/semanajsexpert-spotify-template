@@ -1,0 +1,12 @@
+{
+  "name": "spotifyradio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:ThaSMorato/semanajsexpert-spotify-template.git",
+  "author": "Thales Morato <tha.s.morato@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "17"
+  }
+}

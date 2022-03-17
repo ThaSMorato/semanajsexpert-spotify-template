@@ -21,7 +21,6 @@ const routesOptions = (req, res) => ({
   },
   "GET:/home": async () => {
     const { stream, type } = await controller.getFileStream(homeHTML);
-    console.log("chamou home");
 
     res.writeHead(200, {
       "Content-Type": CONTENT_TYPE[type],

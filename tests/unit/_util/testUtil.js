@@ -45,4 +45,12 @@ export class TestUtil {
       ...data,
     };
   }
+
+  static mockService() {
+    return {
+      createFileStream: jest.fn(),
+      getFileInfo: jest.fn(),
+      getFileStream: jest.fn(),
+    };
+  }
 }

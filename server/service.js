@@ -17,6 +17,7 @@ export class Service {
     const fullFilePath = join(publicDir, file);
     await fsPromises.access(fullFilePath);
     const fileType = extname(fullFilePath);
+
     return { type: fileType, name: fullFilePath };
   }
 

@@ -6,10 +6,23 @@
   "repository": "git@github.com:ThaSMorato/semanajsexpert-spotify-template.git",
   "author": "Thales Morato <tha.s.morato@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "livereload": "nodemon server/index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules&& set LOG_DISABLED=true&& jest --no-cache",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules&& set LOG_DISABLED=true&& jest --no-cache --coverage tests/unit",
+    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules&& set LOG_DISABLED=true&& jest --no-cache --watchAll"
+  },
   "engines": {
     "node": "17"
   },
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "pino": "7.8.0",
+    "pino-pretty": "7.5.3"
+  },
+  "devDependencies": {
+    "jest": "27",
+    "nodemon": "2"
   }
 }
